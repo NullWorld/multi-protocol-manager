@@ -45,17 +45,6 @@ static CYProtocolManager *manager = nil;
         [targets addPointer:(__bridge void * _Nullable)(target)];
     }
     
-    //获取类
-    Class cls = object_getClass(target);
-    
-//    Method deallocMethod = class_getInstanceMethod(cls, NSSelectorFromString(@"dealloc"));
-//    const char *types = method_getTypeEncoding(deallocMethod);
-//    
-//    BOOL xxx = class_addMethod(cls, NSSelectorFromString(@"viewDidDisappear:"),(IMP) cy_dealloc, types);
-//    
-//    NSLog(@"====%d===",xxx);
-//    method_exchangeImplementations(class_getInstanceMethod(cls, NSSelectorFromString(@"dealloc")), class_getInstanceMethod(cls, NSSelectorFromString(@"cy_dealloc")));
-    
 }
 
 - (void)removeDelegateProtocol:(id)protocol{
