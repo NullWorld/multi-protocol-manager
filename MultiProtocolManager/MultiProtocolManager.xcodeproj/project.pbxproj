@@ -171,12 +171,12 @@
 		34857FE42283DF5E00B5F0ED /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				34857FE82283DF5E00B5F0ED /* SViewController.h */,
 				34857FE52283DF5E00B5F0ED /* SViewController.m */,
+				34857FEA2283DF5E00B5F0ED /* ViewController.h */,
 				34857FE62283DF5E00B5F0ED /* ViewController.m */,
 				34857FE72283DF5E00B5F0ED /* ThirdViewController.h */,
-				34857FE82283DF5E00B5F0ED /* SViewController.h */,
 				34857FE92283DF5E00B5F0ED /* ThirdViewController.m */,
-				34857FEA2283DF5E00B5F0ED /* ViewController.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

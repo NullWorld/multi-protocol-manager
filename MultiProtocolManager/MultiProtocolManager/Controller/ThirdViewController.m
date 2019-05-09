@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = NSStringFromClass(self.class);
     self.view.backgroundColor = [UIColor whiteColor];
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(200, 200, 120, 50)];
     [btn addTarget:self action:@selector(persentView) forControlEvents:UIControlEventTouchUpInside];
@@ -34,8 +35,6 @@
     [manager addDelegateTarget:self withProtcol:@"TestViewBtnDelegate"];
     view.delegate = (id<TestViewDelegate>)manager;
     view.btnDelegate = (id<TestViewBtnDelegate>) manager;
-    
-    [manager removeAll];
 }
 
 
