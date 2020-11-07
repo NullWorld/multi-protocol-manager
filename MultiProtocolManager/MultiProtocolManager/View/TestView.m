@@ -27,13 +27,13 @@
 }
 
 - (void)delegateSelector{
-    if ([_delegate respondsToSelector:@selector(tapView:)]) {
-        [_delegate tapView:self];
-    }
-    
-    if ([_delegate respondsToSelector:@selector(printDescrtion)]) {
-        [_delegate printDescrtion];
-    }
+//    if ([_delegate respondsToSelector:@selector(tapView:)]) {
+//        [_delegate tapView:self];
+//    }
+//    
+//    if ([_delegate respondsToSelector:@selector(printDescrtion)]) {
+//        [_delegate printDescrtion];
+//    }
     
 }
 

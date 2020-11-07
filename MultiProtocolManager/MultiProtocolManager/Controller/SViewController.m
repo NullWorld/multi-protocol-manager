@@ -12,7 +12,7 @@
 #import "ThirdViewController.h"
 #import <objc/runtime.h>
 
-@interface SViewController ()<TestViewDelegate,TestViewBtnDelegate>
+@interface SViewController ()<TestViewBtnDelegate>
 
 @end
 

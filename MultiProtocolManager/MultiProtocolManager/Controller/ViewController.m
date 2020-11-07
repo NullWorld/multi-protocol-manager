@@ -35,8 +35,8 @@
     [self.view addSubview:view];
     
     CYProtocolManager *manager = [CYProtocolManager share];
-    [manager addDelegateTarget:self withProtcol:@"TestViewDelegate"];
-    view.delegate = (id<TestViewDelegate>)manager;
+    [manager addDelegateTarget:self withProtcol:@"TestViewBtnDelegate"];
+    view.btnDelegate = (id<TestViewBtnDelegate>)manager;
     
     ButtonView *btnView = [[ButtonView alloc] initWithFrame:CGRectMake(200, 600, 120, 50)];
     btnView.backgroundColor = [UIColor grayColor];

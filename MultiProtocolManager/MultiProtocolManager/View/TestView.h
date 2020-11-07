@@ -10,13 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol TestViewDelegate <NSObject>
-
-- (void)tapView:(UIView *)view;
-
-- (void)printDescrtion;
-
-@end
+//@protocol TestViewDelegate <NSObject>
+//
+//- (void)tapView:(UIView *)view;
+//
+//- (void)printDescrtion;
+//
+//@end
 
 @protocol TestViewBtnDelegate <NSObject>
 
@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TestView : UIView
 
 
-@property (nonatomic,weak)id<TestViewDelegate>delegate;
+//@property (nonatomic,weak)id<TestViewDelegate>delegate;
 
 @property (nonatomic,weak)id<TestViewBtnDelegate>btnDelegate;
 

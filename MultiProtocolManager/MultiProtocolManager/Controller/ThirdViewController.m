@@ -11,7 +11,7 @@
 #import "CYProtocolManager.h"
 #import "TestView.h"
 
-@interface ThirdViewController ()<TestViewDelegate,TestViewBtnDelegate>
+@interface ThirdViewController ()<TestViewBtnDelegate>
 
 @end
 
@@ -31,9 +31,7 @@
     [self.view addSubview:view];
     
     CYProtocolManager *manager = [CYProtocolManager share];
-    [manager addDelegateTarget:self withProtcol:@"TestViewDelegate"];
     [manager addDelegateTarget:self withProtcol:@"TestViewBtnDelegate"];
-    view.delegate = (id<TestViewDelegate>)manager;
     view.btnDelegate = (id<TestViewBtnDelegate>) manager;
 }
 
